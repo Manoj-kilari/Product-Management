@@ -334,7 +334,7 @@ const initialProducts = [
   }
 ];
 
-export default function ProductManagementApp() {
+ function ProductManagementApp() {
   const [products, setProducts] = useState(initialProducts);
   const [searchQuery, setSearchQuery] = useState('');
   const [debouncedSearch, setDebouncedSearch] = useState('');
@@ -982,3 +982,5 @@ export default function ProductManagementApp() {
     </>
   );
 }
+
+export default ProductManagementApp;
