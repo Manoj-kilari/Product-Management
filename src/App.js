@@ -1,5 +1,5 @@
 import React, { useState, useMemo, useEffect } from 'react';
-import { Search, Filter, ShoppingCart, Package, TrendingUp, IndianRupee, Plus, Edit2, Trash2, List, Grid, X } from 'lucide-react';
+import { Search, Filter, ShoppingCart, Package, TrendingUp, IndianRupee, Plus, Edit2, Trash2, List, Grid } from 'lucide-react';
 
 const initialProducts = [
   {
@@ -936,6 +936,48 @@ export default function ProductManagementApp() {
             </div>
           )}
         </div>
+
+        {/* Footer */}
+        <footer className="bg-dark text-white py-4 mt-5">
+          <div className="container">
+            <div className="row">
+              <div className="col-12 col-md-6">
+                <h5 className="fw-bold mb-3">CONTACT</h5>
+                <div className="d-flex flex-column gap-2">
+                  <div className="d-flex align-items-center gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                      <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/>
+                      <circle cx="12" cy="10" r="3"/>
+                    </svg>
+                    <span>Nellore, India</span>
+                  </div>
+                  <div className="d-flex align-items-center gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                      <rect width="20" height="16" x="2" y="4" rx="2"/>
+                      <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+                    </svg>
+                    <span>Manoj.kilari77@gmail.com</span>
+                  </div>
+                  <div className="d-flex align-items-center gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                      <rect width="14" height="20" x="5" y="2" rx="2" ry="2"/>
+                      <path d="M12 18h.01"/>
+                    </svg>
+                    <span>+91 9502360627</span>
+                  </div>
+                </div>
+              </div>
+              <div className="col-12 col-md-6 mt-4 mt-md-0">
+                <h5 className="fw-bold mb-3">About</h5>
+                <p className="text-white-50">Product Management System - Efficiently manage your inventory, track stock levels, and monitor product performance with our comprehensive dashboard.</p>
+              </div>
+            </div>
+            <hr className="my-4 bg-white opacity-25" />
+            <div className="text-center">
+              <p className="mb-0 text-white-50">© 2025 Product Management. All rights reserved.</p>
+            </div>
+          </div>
+        </footer>
       </div>
     </>
   );
